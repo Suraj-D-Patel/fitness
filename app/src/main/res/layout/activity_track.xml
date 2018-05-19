@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:context=".TrackActivity">
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            tools:context=".MapsActivity" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/tv1"
+            android:text="00:00:00"
+            android:textAlignment="center"/>
+
+
+        <LinearLayout
+            android:id="@+id/LL1"
+            android:layout_width="364dp"
+            android:layout_height="49dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="146dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/calories"
+                android:id="@+id/tv2"
+                android:textAlignment="center"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="150dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="25dp"
+                android:text="@string/kilometers"
+                android:textSize="24sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt1"
+            android:layout_marginStart="65dp"
+            android:layout_marginEnd="65dp"
+            android:text="@string/start"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:background="@drawable/button_shape_color_small"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

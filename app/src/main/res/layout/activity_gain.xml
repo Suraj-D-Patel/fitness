@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gain_image_dashboard"
+        android:layout_margin="5dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:id="@+id/LLH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnday1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button"
+                android:text="@string/day_1" />
+
+            <Button
+                android:id="@+id/btnday2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button"
+                android:text="@string/day_2" />
+
+            <Button
+                android:id="@+id/btnday3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button"
+                android:text="@string/day_3" />
+
+            <Button
+                android:id="@+id/btnday4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button"
+                android:text="@string/day_4" />
+
+            <Button
+                android:id="@+id/btnday5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button"
+                android:text="@string/day_5" />
+
+            <Button
+                android:id="@+id/btnday6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button"
+                android:text="@string/day_6" />
+
+            <Button
+                android:id="@+id/btnday7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button"
+                android:text="@string/day_7" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/listview">
+
+    </ListView>
+</LinearLayout>

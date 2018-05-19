@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PushUps">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/push"
+        android:id="@+id/img"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/counter"
+        android:textSize="28sp"
+        android:id="@+id/tv1"
+        android:layout_margin="10dp"
+        android:onClick="onClick"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:id="@+id/bt1"
+        android:layout_marginEnd="85dp"
+        android:layout_marginStart="85dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_shape_color"
+        android:onClick="go"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:id="@+id/bt2"
+        android:layout_marginEnd="85dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="35dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_shape_color_red"
+        android:onClick="finishCounting"
+        />
+</LinearLayout>

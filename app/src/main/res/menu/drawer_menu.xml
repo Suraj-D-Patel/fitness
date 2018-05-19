@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.amrinder.vmmmaterialdesigndemos.MyTabbedActivity">
+
+
+    <item
+        android:id="@+id/history"
+        android:orderInCategory="100"
+        android:title="History"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/history"
+        />
+    <!--<item
+        android:id="@+id/workout"
+        android:orderInCategory="100"
+        android:title="Workout"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/history"
+        />-->
+
+    <item
+        android:id="@+id/music"
+        android:orderInCategory="100"
+        android:icon="@drawable/music1"
+        android:title="Music"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:icon="@drawable/info"
+        android:title="About App"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/contact"
+        android:orderInCategory="100"
+        android:icon="@drawable/contact"
+        android:title="Contact Us"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="100"
+        android:icon="@drawable/share"
+        android:title="Share App"
+        app:showAsAction="ifRoom" />
+
+</menu>

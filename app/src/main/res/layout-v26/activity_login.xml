@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000080"
+    tools:context=".LoginActivity" >
+
+       <ImageView
+           android:layout_width="200dp"
+           android:layout_height="180dp"
+           android:layout_gravity="center"
+           android:layout_marginTop="25dp"
+           android:layout_marginBottom="25dp"
+           android:src="@drawable/icon_pro" />
+
+       <com.google.android.gms.common.SignInButton
+           android:id="@+id/btn_sign_in"
+           android:layout_width="match_parent"
+           android:layout_marginLeft="55dp"
+           android:layout_marginRight="55dp"
+           android:layout_marginTop="45dp"
+           android:tooltipText="Google Signin"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="20dp"/>
+
+       <LinearLayout
+           android:id="@+id/llProfile"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="20dp"
+           android:orientation="horizontal"
+           android:weightSum="3">
+
+           <ImageView
+               android:id="@+id/imgProfilePic"
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_weight="1"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="10dp"
+               android:orientation="vertical"
+               android:layout_weight="2" >
+
+               <TextView
+                   android:id="@+id/txtName"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="15dp"
+                   android:padding="5dp"
+                   android:textColor="@android:color/white"
+                   android:textSize="20sp" />
+
+               <TextView
+                   android:id="@+id/txtEmail"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="5dp"
+                   android:textColor="@android:color/holo_blue_bright"
+                   android:textSize="18sp" />
+           </LinearLayout>
+       </LinearLayout>
+
+       <Button
+           android:id="@+id/btn_normal"
+           android:text="@string/start_now"
+           android:textColor="#FFFFFF"
+           android:textSize="18sp"
+           android:layout_marginTop="45dp"
+           android:layout_gravity="center"
+           android:layout_width="170dp"
+           android:layout_height="45dp"
+           android:background="@drawable/buttonshape"
+           android:shadowColor="#A8A8A8"
+           android:shadowDx="0"
+           android:shadowDy="0"
+           android:visibility="gone"
+           android:shadowRadius="5" />
+
+</LinearLayout>

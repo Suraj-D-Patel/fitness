@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/tv1"
+        android:text="@string/activities"
+        android:textColor="#0ab922"
+        android:textSize="26sp"
+        android:textAlignment="center"/>
+
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv2"
+            android:textColor="#1344e6"
+            android:text="@string/activities"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content"
+            android:textColor="#1344e6"
+            android:text="@string/activities"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_history"
+            android:id="@+id/bt1"
+            android:layout_marginEnd="20dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_small_success"            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_history"
+            android:id="@+id/bt2"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_small_warning" />
+    </LinearLayout>
+</LinearLayout>

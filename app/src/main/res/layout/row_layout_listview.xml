@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageview_in_listview"
+        android:layout_width="60dp"
+        android:src="@color/common_google_signin_btn_text_light_pressed"
+        android:layout_height="60dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageview_in_listview"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/imageview_in_listview"
+        android:text="text"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:id="@+id/textview_in_listview" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textview_in_listview"
+        android:layout_below="@+id/textview_in_listview"
+        android:layout_marginTop="7dp"
+        android:layout_alignBottom="@+id/imageview_in_listview"
+        android:text="txet"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"
+        android:id="@+id/textview2_in_listview"
+        />
+
+</RelativeLayout>

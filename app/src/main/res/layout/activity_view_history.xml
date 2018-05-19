@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frag_map"
+        android:layout_marginTop="15dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view"
+        android:text="@string/view_detail"
+        android:textSize="26sp"
+        android:textColor="#ead21e"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv11"
+            android:text="@string/session_name"
+            android:textSize="20sp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="5" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="2dp"
+            android:layout_weight="5"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv22"
+            android:text="@string/start_time"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="5" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv2"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv33"
+            android:text="@string/end_time"
+            android:textSize="20sp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="5" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv3"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:layout_weight="5"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv44"
+            android:text="@string/date"
+            android:textSize="20sp"
+            android:layout_marginTop="2dp"
+            android:textColor="@android:color/white"
+            android:layout_weight="5" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv4"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="2dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv55"
+            android:text="@string/username"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="2dp"
+            android:layout_weight="5" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv5"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="2dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv66"
+            android:text="@string/total_time"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="2dp"
+            android:layout_weight="5" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv6"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_weight="5"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv77"
+            android:text="@string/kilometer"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="2dp"
+            android:layout_weight="5" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv7"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_weight="5"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv88"
+            android:text="@string/burn_calories"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp"
+            android:layout_weight="5" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv8"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_weight="5"
+            />
+    </LinearLayout>
+</LinearLayout>
