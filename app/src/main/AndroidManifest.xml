@@ -35,8 +35,8 @@
         <activity
             android:name=".ContactUsActivity"
             android:theme="@style/Dialog" />
-        <activity android:name=".PushUps" />
-        <activity android:name=".PullUps" />
+        <activity android:name=".PushUpsActivity" />
+        <activity android:name=".ChinUpsActivity" />
         <activity
             android:name=".LoginActivity"
             android:label="Login Page" />
@@ -77,10 +77,12 @@
             android:label="Music List" />
         <activity
             android:name=".MusicPlayerActivity"
+            android:configChanges="keyboardHidden|orientation"
             android:label="Music Player" />
+
         <activity android:name=".DietActivity" />
         <activity android:name=".GainActivity" />
-        <activity android:name=".WorkOutActivity" />
+        <activity android:name=".SitUpsActivity" android:label="Sit Ups" />
         <activity
             android:name=".WeightActivity"
             android:theme="@style/Theme.Translucent" />

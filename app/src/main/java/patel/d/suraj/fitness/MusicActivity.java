@@ -46,7 +46,7 @@ public class MusicActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music);
-        listView = (ListView) findViewById(R.id.lv2);
+        listView = (ListView) findViewById(R.id.lv_music);
         context = getApplicationContext();
         ListElementsArrayList = new ArrayList<>();
 
@@ -70,7 +70,7 @@ public class MusicActivity extends AppCompatActivity {
         try {
             final Uri sArtworkUri = Uri.parse("content://media/external/audio/albumart");
             Uri uri = ContentUris.withAppendedId(sArtworkUri, album_id);
-            ParcelFileDescriptor pfd = context.getContentResolver().openFileDescriptor(uri, "r");
+            ParcelFileDescriptor pfd = context.getContentResolver().openFileDescriptor(uri, "frag_exercise_pic_four");
             if (pfd != null) {
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inSampleSize = 8;
@@ -117,7 +117,7 @@ public class MusicActivity extends AppCompatActivity {
                 imv1.setImageBitmap(bp);
             }
             else {
-                Picasso.with(MusicActivity.this).load(R.drawable.icon).resize(37,37).into(imv1);
+                Picasso.with(MusicActivity.this).load(R.drawable.music_photos_background).resize(37,37).into(imv1);
             }
             return view;
         }

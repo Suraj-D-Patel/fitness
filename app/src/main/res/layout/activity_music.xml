@@ -8,7 +8,7 @@
     tools:context=".MusicActivity">
 
     <TextView
-        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
         android:text="@string/music_list"
         android:gravity="center"
         android:layout_width="match_parent"
@@ -19,8 +19,8 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lv2"
+        android:id="@+id/lv_music"
         android:background="#FfF5F5F5"
-        android:layout_margin="10dp"/>
+        android:layout_margin="2dp"/>
 
 </LinearLayout>

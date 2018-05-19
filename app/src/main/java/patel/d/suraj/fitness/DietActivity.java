@@ -31,10 +31,11 @@ public class DietActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diet);
 
-        imageView=(ImageView) (findViewById(R.id.iv));
-        listView=(ListView) (findViewById(R.id.lv));
-        btn_view=(Button)(findViewById(R.id.btn_view));
-        textView=(TextView) (findViewById(R.id.tv1));
+        imageView=(ImageView) (findViewById(R.id.imageview_diet));
+        listView=(ListView) (findViewById(R.id.listview_diet));
+        btn_view=(Button)(findViewById(R.id.btn_view_diet));
+        textView=(TextView) (findViewById(R.id.tv_diet));
+
         adapter=new Myadapter();
 
         final String option=getIntent().getStringExtra("option");
@@ -51,7 +52,7 @@ public class DietActivity extends AppCompatActivity {
             });
         }
         else {
-            Picasso.with(DietActivity.this).load(R.drawable.b).resize(290,215).into(imageView);
+            Picasso.with(DietActivity.this).load(R.drawable.weight_gain_pic_one).resize(290,215).into(imageView);
             btn_view.setVisibility(View.VISIBLE);
             textView.setVisibility(View.VISIBLE);
         }

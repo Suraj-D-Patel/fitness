@@ -7,6 +7,7 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import java.util.Locale;
@@ -15,7 +16,7 @@ import java.util.Locale;
  * Created by suraj.
  */
 
-public class PullUps extends AppCompatActivity implements SensorEventListener, StepListener {
+public class ChinUpsActivity extends AppCompatActivity implements SensorEventListener, StepListener {
     int pushup=0;
     private StepDetector simpleStepDetector;
     private SensorManager sensorManager;
@@ -29,7 +30,7 @@ public class PullUps extends AppCompatActivity implements SensorEventListener, S
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pull_ups);
+        setContentView(R.layout.activity_chin_ups);
 
         // Get an instance of the SensorManager
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
@@ -44,14 +45,17 @@ public class PullUps extends AppCompatActivity implements SensorEventListener, S
         BtnStop = (Button) findViewById(R.id.btn_stop);
         BtnStart.setOnClickListener(arg0 -> {
             numSteps = 0;
-            sensorManager.registerListener(PullUps.this, accel, SensorManager.SENSOR_DELAY_FASTEST);
+            sensorManager.registerListener(ChinUpsActivity.this, accel, SensorManager.SENSOR_DELAY_FASTEST);
             BtnStart.setEnabled(false);
         });
 
         BtnStop.setOnClickListener(arg0 -> {
             BtnStart.setEnabled(true);
-            sensorManager.unregisterListener(PullUps.this);
+            sensorManager.unregisterListener(ChinUpsActivity.this);
         });
+
+        //let the screen donot sleep when this activity is opened
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
     @Override

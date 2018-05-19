@@ -19,6 +19,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -54,8 +55,10 @@ public class MainActivity extends AppCompatActivity {
 
         cnd=(CoordinatorLayout) (findViewById(R.id.main_content));
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        mViewPager = (android.support.v4.view.ViewPager) findViewById(R.id.vp);
+
+        mViewPager = (ViewPager) findViewById(R.id.vp);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+
         conMan = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -89,8 +92,6 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar) (findViewById(R.id.toolbar));
         setSupportActionBar(toolbar);
 
-
-
         android.support.design.widget.TabLayout tabs = (TabLayout) findViewById(R.id.tb);
         tabs.addTab(tabs.newTab().setText("Tab 1"));
         tabs.addTab(tabs.newTab().setText("Tab 2"));
@@ -104,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
         //toolbar.setTitle("Hello World");
         toolbar.setSubtitle("Live a Healthy Life");
+        toolbar.setSubtitleTextColor(getResources().getColor(R.color.main_orange_color));
         // Set up the ViewPager with the sections adapter.
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
@@ -111,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(menuItem -> {
                             // Set item in checked state
                             // menuItem.setChecked(true);
-                            // Closing drawer on item click
+                            // Closing drawer_image on item click
             if(menuItem.getItemId()==R.id.history) {
                 startActivity(new Intent(MainActivity.this, HistoryActivity.class));
             } else if (menuItem.getItemId() == R.id.music) {

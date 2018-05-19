@@ -61,6 +61,8 @@ public class LoginActivity extends AppCompatActivity implements
         btn=(Button)findViewById(R.id.btn_normal);
         txtEmail = (TextView) findViewById(R.id.txtEmail);
 
+        updateUI(true);
+
         mAuth = FirebaseAuth.getInstance();
         btn.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this,MainActivity.class)));
 

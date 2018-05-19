@@ -37,8 +37,10 @@ public class HistoryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
+
         arrayList=new ArrayList<>();
-        listv=(ListView) (findViewById(R.id.listv));
+        listv=(ListView) (findViewById(R.id.listv_history));
+
         FirebaseDatabase firebaseDatabase=FirebaseDatabase.getInstance();
         DatabaseReference myref=firebaseDatabase.getReference("Session");
 
@@ -91,11 +93,11 @@ public class HistoryActivity extends AppCompatActivity {
             TextView tv1,tv2,tv3;
             Button bt1,bt2;
             String DurationinHISTORY=obj.StartTime+" -- "+obj.EndTime;
-            bt1=(Button)(convertView.findViewById(R.id.bt1));
-            bt2=(Button)(convertView.findViewById(R.id.bt2));
-            tv1=(TextView) (convertView.findViewById(R.id.tv1));
-            tv2=(TextView) (convertView.findViewById(R.id.tv2));
-            tv3=(TextView) (convertView.findViewById(R.id.tv3));
+            bt1=(Button)(convertView.findViewById(R.id.btn_view_history));
+            bt2=(Button)(convertView.findViewById(R.id.btn_delete_history));
+            tv1=(TextView) (convertView.findViewById(R.id.tv_onez));
+            tv2=(TextView) (convertView.findViewById(R.id.tv_twoz));
+            tv3=(TextView) (convertView.findViewById(R.id.tv_threez));
 
             tv1.setText(sessionNAme);
             tv2.setText(zuser);

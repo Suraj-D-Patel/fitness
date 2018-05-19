@@ -23,7 +23,7 @@ public class Fragment_Exercises extends Fragment {
 
     CarouselView carouselView;
     ListView lv;
-    int[] sampleImages = {R.drawable.s, R.drawable.p, R.drawable.q,R.drawable.r};
+    int[] sampleImages = {R.drawable.frag_exercise_pic_one, R.drawable.frag_exercise_pic_two, R.drawable.frag_exercise_pic_three,R.drawable.frag_exercise_pic_four};
     MyAdapter adapter;
 
     String items[]={"Push Up","Sit Up","Chin Up"};
@@ -40,7 +40,7 @@ public class Fragment_Exercises extends Fragment {
         super.onResume();
 
         lv=(ListView) (getActivity().findViewById(R.id.list));
-        carouselView = (CarouselView)getActivity(). findViewById(R.id.cv);
+        carouselView = (CarouselView)getActivity(). findViewById(R.id.cview);
 
         carouselView.setImageListener(imageListener);
         carouselView.setPageCount(sampleImages.length);
@@ -48,23 +48,18 @@ public class Fragment_Exercises extends Fragment {
         adapter=new MyAdapter();
         lv.setAdapter(adapter);
 
-
-
-
-
-
         lv.setOnItemClickListener((parent, view, position, id) -> {
 
             if(items[position].equals("Push Up")) {
-                startActivity(new Intent(getActivity(),PushUps.class));
+                startActivity(new Intent(getActivity(),PushUpsActivity.class));
             }
             else if(items[position].equals("Sit Up")) {
-                Intent intent = new Intent(getActivity(), WorkOutActivity.class);
+                Intent intent = new Intent(getActivity(), SitUpsActivity.class);
                 intent.putExtra("option12", items[position]);
                 startActivity(intent);
             }
             else if(items[position].equals("Chin Up")) {
-                startActivity(new Intent(getActivity(), PullUps.class));
+                startActivity(new Intent(getActivity(), ChinUpsActivity.class));
             }
         });
     }
@@ -102,13 +97,13 @@ public class Fragment_Exercises extends Fragment {
             tv2.setVisibility(View.INVISIBLE);
 
             if(i==0) {
-                Picasso.with(getActivity()).load(R.drawable.push).resize(40,40).into(imageView);
+                Picasso.with(getActivity()).load(R.drawable.push_ups).resize(40,40).into(imageView);
             }
             else if(i==1) {
                 Picasso.with(getActivity()).load(R.drawable.situp_sitdown).resize(40,40).into(imageView);
             }
             else if(i==2){
-                Picasso.with(getActivity()).load(R.drawable.pull).resize(40,40).into(imageView);
+                Picasso.with(getActivity()).load(R.drawable.pull_ups).resize(40,40).into(imageView);
             }
 
             tv1.setText(items[i]);

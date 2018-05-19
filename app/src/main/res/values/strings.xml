@@ -2,10 +2,6 @@
     <string name="app_name">fitness</string>
     <string name="homepage">Homepage</string>
     <string name="title_activity_view_history">Detail-View History</string>
-    <string name="pause">Pause</string>
-    <string name="back">Play</string>
-    <string name="rewind">Rewind</string>
-    <string name="forward">Forward</string>
     <string name="features">Features</string>
     <string name="for_more_details">For More Details :-</string>
     <string name="ph_no">Ph No. 7508972605</string>
@@ -38,7 +34,6 @@
     <string name="day_1">day 1</string>
     <string name="view">View</string>
     <string name="song_title">Song-Title</string>
-    <string name="start">Start</string>
     <string name="stop">Stop</string>
     <string name="idea_mobile_no">7508972605</string>
     <string name="jio_mobile_no">7986180139</string>
@@ -71,4 +66,10 @@
     <string name="burn_calories">Burn Calories</string>
     <string name="delete_history">Delete History</string>
     <string name="title_activity_maps">Map</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="description">Description</string>
+    <string name="rev">Rev</string>
+    <string name="play">PLay</string>
+    <string name="fwd">Fwd</string>
 </resources>

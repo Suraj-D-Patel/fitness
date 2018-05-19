@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -26,8 +25,7 @@
             android:padding="5dp"
             android:textColor="#050505"
             android:textSize="20sp"
-            android:text="@string/detail_about_app"
-            />
+            android:text="@string/detail_about_app" />
 
         <TextView
             android:layout_width="match_parent"
@@ -35,32 +33,31 @@
             android:textColor="#050505"
             android:textSize="18sp"
             android:text="@string/explain_about_app"
-            android:padding="5dp"
-            />
+            android:padding="5dp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:layout_marginStart="40dp"
             android:textColor="#050505"
-            android:text="@string/tv_tracking"
-            />
+            android:text="@string/tv_tracking" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:textColor="#050505"
             android:layout_marginStart="40dp"
-            android:text="@string/tv_diet_plan"
-            />
+            android:text="@string/tv_diet_plan" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:textColor="#050505"
             android:layout_marginStart="40dp"
-            android:text="@string/TV_exercise"
-            />
+            android:text="@string/TV_exercise" />
 
         <TextView
             android:layout_width="match_parent"
@@ -70,29 +67,19 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginTop="20dp"
-            />
+            android:layout_marginTop="20dp" />
 
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scrollbars="none"
-            android:layout_marginTop="20dp"
-            >
+            android:layout_marginTop="20dp">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-               <!-- <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Signup"
-                    android:background="#03a9fb"
-                    android:id="@+id/bt1"
-                    android:textColor="#ffffff"
-                    android:layout_marginLeft="10dp"
-                    />-->
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -100,16 +87,8 @@
                     android:id="@+id/btn_google_login"
                     android:textColor="#ffffff"
                     android:background="#03a9fb"
-                    android:layout_marginStart="10dp"
-                    />
-               <!-- <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Forgot Password"
-                    android:id="@+id/bt3"
-                    android:background="#03a9fb"
-                    android:textColor="#ffffff"
-                    android:layout_marginLeft="10dp"/>-->
+                    android:layout_marginStart="10dp" />
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -118,14 +97,7 @@
                     android:background="#03a9fb"
                     android:textColor="#ffffff"
                     android:layout_marginStart="10dp"/>
-                <!--<Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Change Password"
-                    android:id="@+id/bt5"
-                    android:background="#03a9fb"
-                    android:textColor="#ffffff"
-                    android:layout_marginLeft="10dp"/>-->
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -133,8 +105,8 @@
                     android:id="@+id/btn_exercise"
                     android:background="#03a9fb"
                     android:textColor="#ffffff"
-
                     android:layout_marginStart="10dp"/>
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -143,6 +115,7 @@
                     android:textColor="#ffffff"
                     android:background="#03a9fb"
                     android:layout_marginStart="10dp"/>
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -151,6 +124,7 @@
                     android:textColor="#ffffff"
                     android:background="#03a9fb"
                     android:layout_marginStart="10dp"/>
+
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -164,88 +138,61 @@
             android:gravity="center"
             android:layout_marginTop="20dp" />
 
-       <!-- <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#050505"
-            android:layout_marginLeft="40dp"
-            android:textSize="15dp"
-            android:text="- Signup Page"
-            />-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#050505"
             android:layout_marginStart="40dp"
             android:textSize="15sp"
-            android:text="@string/google_login_page"
-            />
-      <!--  <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#050505"
-            android:layout_marginLeft="40dp"
-            android:textSize="15dp"
-            android:text="- Forgot Password"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#050505"
-            android:layout_marginLeft="40dp"
-            android:textSize="15dp"
-            android:text="- Changed Password"
-            />-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#050505"
-            android:layout_marginStart="40dp"
-            android:textSize="15sp"
-            android:text="@string/track_running"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#050505"
-            android:layout_marginStart="40dp"
-            android:textSize="15sp"
-            android:text="@string/tv_count_timing"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#050505"
-            android:layout_marginStart="40dp"
-            android:textSize="15sp"
-            android:text="@string/tv_calculate_callories"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#050505"
-            android:layout_marginStart="40dp"
-            android:textSize="15sp"
-            android:text="@string/tv_find_location"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#050505"
-            android:layout_marginStart="40dp"
-            android:textSize="15sp"
-            android:text="@string/view_history"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#050505"
-            android:textSize="15sp"
-            android:layout_marginStart="40dp"
-            android:text="@string/tv_music_player"
-            />
+            android:text="@string/google_login_page" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#050505"
+            android:layout_marginStart="40dp"
+            android:textSize="15sp"
+            android:text="@string/track_running" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#050505"
+            android:layout_marginStart="40dp"
+            android:textSize="15sp"
+            android:text="@string/tv_count_timing" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#050505"
+            android:layout_marginStart="40dp"
+            android:textSize="15sp"
+            android:text="@string/tv_calculate_callories" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#050505"
+            android:layout_marginStart="40dp"
+            android:textSize="15sp"
+            android:text="@string/tv_find_location" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#050505"
+            android:layout_marginStart="40dp"
+            android:textSize="15sp"
+            android:text="@string/view_history" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#050505"
+            android:textSize="15sp"
+            android:layout_marginStart="40dp"
+            android:text="@string/tv_music_player" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -261,8 +208,7 @@
                 android:text="@string/for_more_details"
                 android:textSize="18sp"
                 android:layout_weight="4"
-                android:gravity="end"
-                />
+                android:gravity="end" />
 
             <TextView
                 android:layout_width="0dp"
@@ -273,12 +219,8 @@
                 android:text="@string/ph_no"
                 android:textSize="20sp"
                 android:layout_weight="6"
-                android:gravity="start"
-                />
+                android:gravity="start" />
+
         </LinearLayout>
-
-
-
     </LinearLayout>
 </ScrollView>
-

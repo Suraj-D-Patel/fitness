@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/song_title"
-        android:id="@+id/textView"
+        android:id="@+id/song_title"
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:layout_below="@+id/textview"
@@ -31,7 +31,7 @@
         android:textSize="24sp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/album_image"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_marginLeft="25dp"
@@ -39,49 +39,61 @@
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/song_title"
         android:src="@drawable/download" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
-        android:id="@+id/button4"
-        android:background = "@drawable/ic_fast_rewind_black_24dp"
+        android:id="@+id/btn_rewind"
+        android:text="@string/rev"
+        android:background="@drawable/btn_round_small"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btn_rewind"
+        android:layout_marginStart="113dp"
+        android:text="@string/pause"
+        android:background="@drawable/btn_round_small_warning"
         android:textColor="@android:color/white"
-        android:layout_marginEnd="5dp"
-        android:background = "@drawable/ic_pause_circle_outline_black_24dp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="11dp"
-        android:layout_marginStart="5dp"
-        android:background = "@drawable/ic_play_circle_outline_black_24dp"
-        android:layout_marginBottom="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_rewind"
+        android:layout_marginEnd="113dp"
+        android:text="@string/play"
+        android:background="@drawable/btn_round_small_warning"
         android:textColor="@android:color/white"
-        android:layout_toStartOf="@+id/button" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_fwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background = "@drawable/ic_fast_forward_black_24dp"
-        android:layout_toEndOf="@+id/seekBar"
-        android:layout_marginBottom="25dp" />
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@+id/btn_rewind"
+        android:background="@drawable/btn_round_small"
+        android:textColor="@android:color/white"
+        android:text="@string/fwd" />
 
     <SeekBar
         android:layout_width="wrap_content"
@@ -91,10 +103,10 @@
         android:layout_marginBottom="15dp"
         android:layout_alignStart="@+id/textview"
         android:layout_alignEnd="@+id/textview"
-        android:layout_above="@+id/button" />
+        android:layout_above="@+id/btn_fwd" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/time_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/seekBar"
@@ -105,7 +117,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/time_end"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/seekBar"

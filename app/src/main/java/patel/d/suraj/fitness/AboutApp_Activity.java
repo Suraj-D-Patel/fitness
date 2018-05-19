@@ -42,7 +42,7 @@ public class AboutApp_Activity extends AppCompatActivity {
         });
 
         btn_exercise.setOnClickListener(view -> {
-            startActivity(new Intent(AboutApp_Activity.this,WorkOutActivity.class));
+            startActivity(new Intent(AboutApp_Activity.this,ChinUpsActivity.class));
         });
 
         btn_music_player.setOnClickListener(view -> {

@@ -45,8 +45,8 @@ public class Fragment_Tracking extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_tracking, container, false);
-        listView = view.findViewById(R.id.lv2);
-        button = (Button) view.findViewById(R.id.bt1as);
+        listView = view.findViewById(R.id.lv_tracking);
+        button = (Button) view.findViewById(R.id.btnstart_tracking);
         return view;
     }
 

@@ -6,7 +6,7 @@
     tools:context=".Fragment_Exercises">
 
     <com.synnapps.carouselview.CarouselView
-        android:id="@+id/cv"
+        android:id="@+id/cview"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_margin="10dp" />

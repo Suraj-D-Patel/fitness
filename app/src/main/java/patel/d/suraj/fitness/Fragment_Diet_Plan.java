@@ -23,7 +23,7 @@ public class Fragment_Diet_Plan extends Fragment {
 
     CarouselView carouselView;
     ListView zlistview;
-    int[] Images = {R.drawable.one, R.drawable.two, R.drawable.three,R.drawable.four};
+    int[] Images = {R.drawable.fragment_diet_pic_one, R.drawable.fragment_diet_pic_two, R.drawable.fragment_diet_pic_three,R.drawable.fragment_diet_pic_four};
     MyAdapter adapter;
     String items[]={"Weight Loss","Weight Gain"};
 
@@ -37,8 +37,8 @@ public class Fragment_Diet_Plan extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        zlistview=(ListView) (getActivity().findViewById(R.id.lv));
-        carouselView = (CarouselView)getActivity(). findViewById(R.id.carouselView);
+        zlistview=(ListView) (getActivity().findViewById(R.id.listview_dietz));
+        carouselView = (CarouselView) getActivity().findViewById(R.id.carouselView);
 
         carouselView.setImageListener(imageListener);
         carouselView.setPageCount(Images.length);
@@ -87,7 +87,7 @@ public class Fragment_Diet_Plan extends Fragment {
             if(i==0) {
                 Picasso.with(getActivity()).load(R.drawable.apple).resize(40,40).into(imageView);
             } else if(i==1){
-                Picasso.with(getActivity()).load(R.drawable.b).resize(40,40).into(imageView);
+                Picasso.with(getActivity()).load(R.drawable.weight_gain_pic_one).resize(40,40).into(imageView);
             }
 
             tv1.setText(items[i]);

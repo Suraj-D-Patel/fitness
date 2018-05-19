@@ -23,7 +23,7 @@
     <item
         android:id="@+id/music"
         android:orderInCategory="100"
-        android:icon="@drawable/music1"
+        android:icon="@drawable/music"
         android:title="Music"
         app:showAsAction="ifRoom" />
 
